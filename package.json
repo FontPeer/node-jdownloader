@@ -1,0 +1,29 @@
+{
+  "name": "node-jdownloader",
+  "description": "Allows controlling JDownloader through it's RemoteControl plugin",
+  "version": "0.1.0",
+  "homepage": "http://github.com/mathieuravaux/node-jdownloader",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mathieuravaux/node-jdownloader.git"
+  },
+  "author": "Mathieu Ravaux <mathieu.ravaux@gmail.com> (http://twitter.com/mathieuravaux)",
+  "main": "lib/jdownloader.js",
+  "directories": {
+    "lib": "lib/"
+  },
+  "scripts": {
+    "pretest": "coffee -c -o lib src; coffee -c -o test test-src",
+    "test": "vows test/*-test.js --spec"
+  },
+  "dependencies": {
+    "restler-aaronblohowiak": "*"
+  },
+  "devDependencies": {
+    "coffee-script": "*",
+    "vows": "*"
+  },
+  "engines": {
+    "node": ">= 4.0.1"
+  }
+}
