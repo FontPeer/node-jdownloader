@@ -17,9 +17,12 @@
     "test": "vows test/*-test.js --spec"
   },
   "dependencies": {
+    "underscore": "*",
+    "ltx": "*",
     "restler-aaronblohowiak": "*"
   },
   "devDependencies": {
+    "docco": "*",
     "coffee-script": "*",
     "vows": "*"
   },
