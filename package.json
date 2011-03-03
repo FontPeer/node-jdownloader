@@ -1,8 +1,8 @@
 {
   "name": "node-jdownloader",
-  "description": "Allows controlling JDownloader through it's RemoteControl plugin",
+  "description": "Allows controlling JDownloader through its RemoteControl plugin",
   "version": "0.1.0",
-  "homepage": "http://github.com/mathieuravaux/node-jdownloader",
+  "homepage": "http://mathieuravaux.github.com/node-jdownloader",
   "repository": {
     "type": "git",
     "url": "git://github.com/mathieuravaux/node-jdownloader.git"
@@ -17,16 +17,16 @@
     "test": "vows test/*-test.js --spec"
   },
   "dependencies": {
-    "underscore": "*",
-    "ltx": "*",
-    "restler-aaronblohowiak": "*"
+    "underscore": ">= 1.1.4",
+    "ltx": ">= 0.0.4",
+    "request": ">= 1.2.0"
   },
   "devDependencies": {
-    "docco": "*",
-    "coffee-script": "*",
-    "vows": "*"
+    "docco": ">= 0.3.0",
+    "coffee-script": ">= 1.0.1",
+    "vows": ">= 0.5.6"
   },
   "engines": {
-    "node": ">= 4.0.1"
+    "node": ">= 0.2.6"
   }
 }
