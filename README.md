@@ -15,7 +15,7 @@ then,
     jdownloader.get_speed(function(speed){  console.log("Woohoo! " + speed + "Kbps !!"); })
 
 
-Run `npm test node-jdownloader` and read the output specs:
+Run `npm test node-jdownloader` and read the output specs
 
 # Developing node-jdownloader #
 
@@ -55,7 +55,7 @@ Download site: [https://launchpad.net/~jd-team](https://launchpad.net/~jd-team)
     apt-get install jdownloader
 
 ### Using VNC to visually check JDownloader status (port 5900 by default): ###
-    Xvfb :1 -screen 0 1024x768x16 &
+    Xvfb :1 -screen 0 1280x1024x16 &
     export DISPLAY=:1
     x11vnc -display :1 -usepw -xkb -ncache 10 &
     fluxbox & # if necessary
@@ -63,6 +63,8 @@ Download site: [https://launchpad.net/~jd-team](https://launchpad.net/~jd-team)
 
 ### Other tips : ###
 
+ * The testsuite is run against a RemoteControl plugin of version 12612 [http://localhost:10025/get/rcversion to get it](http://localhost:10025/get/rcversion)
+ * To upgrade the plugin, start JDownloader with `-branch NIGHTLY` in the command-line. The branch is pretty stable in my experience.
  * Launch JDownloader with `--hide` to prevent Linkgrabber confirmations blocking it:
     `cd ~/.jdownloader; java -Xmx512M -jar JDownloader.jar --hide`
  * JDownloader default ports: Webinterface => 8765, Remote control => 10025
